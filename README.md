@@ -106,7 +106,10 @@ The **`keyof`**  keyword in TypeScript is used to get the keys of an object type
 
 <br/>
 
-`keyof` Keyword used in many ways in TypeScript . They are: 
+
+`keyof` Keyword used in many ways in TypeScript . They are:
+
+<br/> 
 
 *  **Using `keyof` to get object keys**. **Example:**  `type Person = {
   name: string;
@@ -116,6 +119,7 @@ The **`keyof`**  keyword in TypeScript is used to get the keys of an object type
 > If an object **Person** . The **`keyof Person`**    would create a union of the keys of **Person** , which are **name** and **age** . that means **PersonKeys = 'name' | age**.
 > 
 
+<br/>
 <br/>
 
 *  **Using `keyof` with a generic function.** The `keyof` keyword is used with generics to ensure type safety when accessing properties of objects.
@@ -130,6 +134,7 @@ The **`keyof`**  keyword in TypeScript is used to get the keys of an object type
 > Here T is the object type Person.  **K extends keyof  T**  ensures that key of T is a valid key of the **T type object**.  **T[k]** meaning the type of the value is to the key **K from the object T**.  In this function ****only valid key** of the `Person` object are allowed and ensure that invalid key not passing the function. 
 
 <br/>
+<br/>
 
 * **Using `keyof` with Object Keys**. It is used to access keys dynamically. **Example:** `const car = {
   make: "Toyota",
@@ -142,5 +147,6 @@ The **`keyof`**  keyword in TypeScript is used to get the keys of an object type
 > Here **car** is a actual object . when declare `typeof car`, its gets the **type actual of object** `car`.  `keyof typeof car` creates a union of  car  keys like, `"make" | "year"`. `K expends` means its  passes only car objects key, not another invalid key. 
 
 <br/>
+
 
 *Finally,* we can tell `keyof` keyword use for ensures **type safety** when accessing object properties dynamically, helps create **generic utilities** that work with object keys, **prevents invalid property** access at compile time, helps build reusable components and works great with form inputs, object mappers, validators, etc.
