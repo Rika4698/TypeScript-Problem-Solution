@@ -1,7 +1,9 @@
 
-function formatString(input:string, toUpper:boolean = true):string{
-    const formate = (toUpper ? input.toUpperCase() : input.toLowerCase());
-    return formate;
+function formatString(input:string, toUpper?: boolean):string{
+    if (toUpper === false) {
+        return input.toLowerCase();
+      }
+      return input.toUpperCase();
 
 }
 
@@ -98,11 +100,12 @@ enum Day {
 
   async function squareAsync(n: number): Promise<number>{
 
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            n<0? reject(new Error("Negative number not allowed")):resolve(n*n);
-        },1000 );
-    });
+    if (n < 0) {
+        return Promise.reject(new Error("Negative number not allowed"));
+      }
+      return new Promise(resolve => {
+        setTimeout(() => resolve(n * n), 1000);
+      });
   }
 
 
