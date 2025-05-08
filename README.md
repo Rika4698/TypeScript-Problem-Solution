@@ -136,4 +136,4 @@ The **`keyof`**  keyword in TypeScript is used to get the keys of an object type
 
 > Here **car** is a actual object . when declare `typeof car`, its gets the **type actual of object** `car`.  `keyof typeof car` creates a union of  car  keys like, `"make" | "year"`. `K expends` means its  passes only car objects key, not another invalid key. 
 
-Finally, we can tell `keyof` keyword use for ensures **type safety** when accessing object properties dynamically, helps create **generic utilities** that work with object keys, **prevents invalid property** access at compile time, helps build reusable components and works great with form inputs, object mappers, validators, etc.
+*Finally,* we can tell `keyof` keyword use for ensures **type safety** when accessing object properties dynamically, helps create **generic utilities** that work with object keys, **prevents invalid property** access at compile time, helps build reusable components and works great with form inputs, object mappers, validators, etc.
