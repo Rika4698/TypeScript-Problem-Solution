@@ -2,6 +2,7 @@
 # The impactful blog post on the questions is given below:
 
   
+<br/>
 
 ## 1. What are some differences between interfaces and types in TypeScript?
 
