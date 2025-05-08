@@ -99,6 +99,8 @@ const add: Add = (a, b) => a + b;`
 
 The **`keyof`**  keyword in TypeScript is used to get the keys of an object type. It creates a **union type** of the **string literals** of the keys of the given type.
 
+<br/>
+
 **The syntax of keyword is `keyof T` .**
 
 > Where  T is a type or interface, and `keyof T` will return a **union**
